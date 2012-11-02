@@ -13,6 +13,9 @@ sub startup {
 
     # Normal route to controller
     $r->get('/')->to('example#welcome');
+
+    #route to json fetcher and filter
+    $r->get('/fetch')->to('feed#fetch');
 }
 
 1;
