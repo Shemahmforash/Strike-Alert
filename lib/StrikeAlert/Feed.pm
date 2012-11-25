@@ -1,4 +1,7 @@
 package StrikeAlert::Feed;
+
+use utf8;
+
 use Mojo::Base 'Mojolicious::Controller';
 
 use Mojo::UserAgent;
@@ -7,8 +10,6 @@ use Encode;
 use Mojo::ByteStream 'b';
 
 use Data::Dumper;
-
-use utf8;
 
 # Fresh user agent
 my $ua = Mojo::UserAgent->new;
@@ -37,10 +38,10 @@ sub test {
     my $self = shift;    
 
     my $results  = {
-    #            'a' => 'É um á',
-#                'c' => b('é um á')->to_string,
-   #             'b' => 'çàá ',    
-                'string2' => b('à')->encode('UTF-8'), 
+                'string1' => 'à',
+                'string2' => '\x{E0}', 
+                'string3' => b('à')->encode('UTF-8'), 
+                'string4' => b('\x{E1}')->encode('UTF-8'), 
             };
 
     $self->render_json( $results );

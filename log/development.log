@@ -5031,3 +5031,38 @@ Compilation failed in require at (eval 245) line 1.
 [Sun Nov 25 13:57:16 2012] [debug] GET /test/ (Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11).
 [Sun Nov 25 13:57:16 2012] [debug] Routing to controller "StrikeAlert::Feed" and action "test".
 [Sun Nov 25 13:57:16 2012] [debug] 200 OK (0.003934s, 254.194/s).
+[Sun Nov 25 14:20:14 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Nov 25 14:20:14 2012] [debug] GET /test/ (Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11).
+[Sun Nov 25 14:20:14 2012] [debug] Routing to controller "StrikeAlert::Feed" and action "test".
+[Sun Nov 25 14:20:14 2012] [debug] 200 OK (0.005866s, 170.474/s).
+[Sun Nov 25 14:22:01 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Nov 25 14:22:01 2012] [debug] GET /test/ (Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11).
+[Sun Nov 25 14:22:01 2012] [debug] Routing to controller "StrikeAlert::Feed" and action "test".
+[Sun Nov 25 14:22:01 2012] [debug] 200 OK (0.043998s, 22.728/s).
+[Sun Nov 25 14:24:23 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Nov 25 14:24:23 2012] [debug] GET /test/ (Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11).
+[Sun Nov 25 14:24:23 2012] [debug] Routing to controller "StrikeAlert::Feed" and action "test".
+[Sun Nov 25 14:24:23 2012] [debug] 200 OK (0.010628s, 94.091/s).
+[Sun Nov 25 14:24:25 2012] [debug] GET /test/ (Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11).
+[Sun Nov 25 14:24:25 2012] [debug] Routing to controller "StrikeAlert::Feed" and action "test".
+[Sun Nov 25 14:24:25 2012] [debug] 200 OK (0.001170s, 854.701/s).
+[Sun Nov 25 14:24:26 2012] [debug] GET /test/ (Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11).
+[Sun Nov 25 14:24:26 2012] [debug] Routing to controller "StrikeAlert::Feed" and action "test".
+[Sun Nov 25 14:24:26 2012] [debug] 200 OK (0.001427s, 700.771/s).
+[Sun Nov 25 14:24:32 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Nov 25 14:24:32 2012] [debug] GET /test/ (Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11).
+[Sun Nov 25 14:24:32 2012] [debug] Routing to controller "StrikeAlert::Feed" and action "test".
+[Sun Nov 25 14:24:32 2012] [debug] 200 OK (0.011169s, 89.534/s).
+[Sun Nov 25 14:24:33 2012] [debug] GET /test/ (Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11).
+[Sun Nov 25 14:24:33 2012] [debug] Routing to controller "StrikeAlert::Feed" and action "test".
+[Sun Nov 25 14:24:33 2012] [debug] 200 OK (0.001217s, 821.693/s).
+[Sun Nov 25 14:24:33 2012] [debug] GET /test/ (Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11).
+[Sun Nov 25 14:24:33 2012] [debug] Routing to controller "StrikeAlert::Feed" and action "test".
+[Sun Nov 25 14:24:33 2012] [debug] 200 OK (0.001192s, 838.926/s).
+[Sun Nov 25 14:24:34 2012] [debug] GET /test/ (Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11).
+[Sun Nov 25 14:24:34 2012] [debug] Routing to controller "StrikeAlert::Feed" and action "test".
+[Sun Nov 25 14:24:34 2012] [debug] 200 OK (0.001272s, 786.164/s).
+[Sun Nov 25 14:24:43 2012] [debug] Your secret passphrase needs to be changed!!!
+[Sun Nov 25 14:24:43 2012] [debug] GET /test/ (Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11).
+[Sun Nov 25 14:24:43 2012] [debug] Routing to controller "StrikeAlert::Feed" and action "test".
+[Sun Nov 25 14:24:43 2012] [debug] 200 OK (0.008168s, 122.429/s).
