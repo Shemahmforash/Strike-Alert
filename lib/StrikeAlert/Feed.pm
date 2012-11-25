@@ -2,9 +2,13 @@ package StrikeAlert::Feed;
 use Mojo::Base 'Mojolicious::Controller';
 
 use Mojo::UserAgent;
-use Mojo::Util 'encode';
+use Mojo::Util qw( encode decode );
+use Encode;
+use Mojo::ByteStream 'b';
 
 use Data::Dumper;
+
+use utf8;
 
 # Fresh user agent
 my $ua = Mojo::UserAgent->new;
@@ -22,8 +26,24 @@ sub fetch {
     $results = $self->_filter( $results );
 
     #render json
-    $self->render_json( $results );
+    #TODO: fix rendering
+    #$self->render_json( $results );
+    $self->render(
+            'json' => $results
+        );
+}
 
+sub test {
+    my $self = shift;    
+
+    my $results  = {
+    #            'a' => 'É um á',
+#                'c' => b('é um á')->to_string,
+   #             'b' => 'çàá ',    
+                'string2' => b('à')->encode('UTF-8'), 
+            };
+
+    $self->render_json( $results );
 }
 
 #filter the json results by a particular string in a particular field
@@ -48,13 +68,17 @@ sub _filter {
             #in some cases, must analyse second level
             if ( $field =~ /company/ || $field =~ /submitter/ ) {
                 my ( $field, $subfield ) = split ':', $field;
-                push @filtered_results, $strike
-                    if $strike->{ $field }->{ $subfield } =~ m/$query/i;   
+                if ( $strike->{ $field }->{ $subfield } =~ m/$query/i ) {
+                    $strike->{ $field }->{ $subfield } = encode( 'UTF-8', $strike->{ $field }->{ $subfield } );
+                    push @filtered_results, $strike;
+                }   
                 next;
             }
             #regular case
-            push @filtered_results, $strike
-                if $strike->{ $field } =~ m/$query/i;   
+            if ( $strike->{ $field } =~ m/$query/i ) {
+                $strike->{ $field } = encode( 'UTF-8', $strike->{ $field } );
+                push @filtered_results, $strike;
+            }
         }
     }
 

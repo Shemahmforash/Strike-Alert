@@ -16,6 +16,10 @@ sub startup {
 
     #route to json fetcher and filter
     $r->get('/fetch')->to('feed#fetch');
+
+    $r->get('/test')->to('feed#test');
+
+    $r->get('/tweet')->to('tweet#get');
 }
 
 1;
